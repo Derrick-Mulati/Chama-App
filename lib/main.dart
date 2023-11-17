@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const RootPage(),
     );
   }
@@ -39,17 +39,14 @@ class _RootPageState extends State<RootPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chama App'),
-        backgroundColor: Colors.blue, // Set your desired color here
 
       ),
       body: pages[currentPage],
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           debugPrint('DEPOSIT');
-
         },
         child: const Icon(Icons.add),
-        backgroundColor: Colors.blue, // Set your desired color here
       ),
       bottomNavigationBar: NavigationBar(
         destinations: const [
