@@ -16,12 +16,14 @@ class MembersPage extends StatelessWidget {
         return  ListTile(
           title: Text('Item ${(index+1)}'),
           leading: const Icon(Icons.person),
-          trailing: Switch(
+          trailing:
+          Switch(
               value: isSwitch,
               onChanged: (bool newBool) {
                 setState(() {});
                 isSwitch = newBool;
               }),
+
         );
       },
     );
