@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:chama_app/home_page.dart';
 import 'package:chama_app/members_page.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -51,6 +52,7 @@ class _RootPageState extends State<RootPage> {
       bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.person), label: 'Contributions'),
           NavigationDestination(icon: Icon(Icons.person), label: 'Members'),
         ],
         onDestinationSelected: (int index) {

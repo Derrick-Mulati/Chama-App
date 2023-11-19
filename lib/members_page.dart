@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:chama_app/home_page.dart';
+import 'package:chama_app/contributions.dart';
+import 'package:chama_app/members_page.dart';
 
 const int itemCount = 10;
 bool isSwitch = false;
