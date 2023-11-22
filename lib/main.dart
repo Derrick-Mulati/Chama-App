@@ -1,3 +1,4 @@
+import 'package:chama_app/contributions_page.dart';
 import 'package:flutter/material.dart';
 import 'package:chama_app/home_page.dart';
 import 'package:chama_app/members_page.dart';
@@ -31,6 +32,7 @@ class _RootPageState extends State<RootPage> {
   int currentPage = 0;
   List<Widget> pages = const [
     HomePage(),
+    ContributionsPage(),
     MembersPage()
 
 
@@ -43,16 +45,10 @@ class _RootPageState extends State<RootPage> {
         title: const Text('Chama App'),
 
       ),
-      body: pages[currentPage],
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          debugPrint('DEPOSIT');
-        },
-        child: const Icon(Icons.add),
-      ),
+
       bottomNavigationBar: NavigationBar(
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.home), label: 'Home', labelStyle: TextStyle(fontWeight: FontWeight.bold)),
           NavigationDestination(icon: Icon(Icons.person), label: 'Contributions'),
           NavigationDestination(icon: Icon(Icons.person), label: 'Members'),
         ],
