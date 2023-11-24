@@ -1,7 +1,7 @@
 # Chama App
 
 
-## Getting Started
+## Getting Started.
 
 ⚠️UNDER CONSTRUCTION⚠️
 
