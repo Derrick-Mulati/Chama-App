@@ -3,5 +3,5 @@
 
 ## Getting Started.
 
-⚠️STILL UNDER CONSTRUCTION⚠️
+⚠️UNDER CONSTRUCTION⚠️
 
